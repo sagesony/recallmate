@@ -10,11 +10,11 @@
   <!-- Hero Section -->
   <section class="text-center py-20 px-6 bg-gradient-to-b from-blue-100 to-white">
     <h1 class="text-4xl md:text-5xl font-bold mb-4">Never Forget What You Read</h1>
-    <p class="text-xl mb-6">Use AI to summarize and resurface your saved links when you're most likely to forget them.</p>
+    <p class="text-xl mb-6">Based on the science of spaced repetition and active recall</p>
     <a href="#" class="bg-blue-600 text-white py-3 px-6 rounded-full text-lg hover:bg-blue-700">Add to Chrome</a>
-    <div class="mt-10">
+   <!--  <div class="mt-10">
       <img src="./assets/ai-bookmark-hero.png" alt="AI Bookmark Summary Screenshot" class="mx-auto rounded shadow-lg max-w-3xl">
-    </div>
+    </div> -->
   </section>
 
   <!-- How it Works -->
@@ -24,17 +24,17 @@
       <div class="text-center">
         <div class="text-5xl mb-4">🔖</div>
         <h3 class="text-xl font-semibold mb-2">1. Bookmark Anything</h3>
-        <p>Save articles, videos, or links with one click.</p>
+        <p>Bookmark your liked articles, videos, or links with one click.</p>
       </div>
       <div class="text-center">
         <div class="text-5xl mb-4">🧠</div>
-        <h3 class="text-xl font-semibold mb-2">2. Get Smart Summaries</h3>
-        <p>AI creates clear summaries of what you saved.</p>
+        <h3 class="text-xl font-semibold mb-2">2. Get Smart Summaries in Your Email</h3>
+        <p>AI sends weekly summaries of what your favorite content</p>
       </div>
       <div class="text-center">
         <div class="text-5xl mb-4">📬</div>
-        <h3 class="text-xl font-semibold mb-2">3. Review When You Forget</h3>
-        <p>Spaced repetition helps you remember just in time.</p>
+        <h3 class="text-xl font-semibold mb-2">3. Review Before You Forget</h3>
+        <p>Spaced repetition helps you solidify your learnings</p>
       </div>
     </div>
   </section>
@@ -47,9 +47,153 @@
     </div>
   </section>
 
-  <!-- CTA Footer -->
+  
+  
+  <!-- Carousel Section -->
+<!--   <section class="bg-white py-20 px-6">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-10">See RecallMate in Action</h2>
+      <div x-data="{ activeSlide: 1 }" class="relative">
+        <div class="overflow-hidden rounded-lg shadow-lg h-[300px] md:h-[350px]">
+          <div class="flex transition-transform duration-500 h-full"
+               :style="'transform: translateX(-' + (activeSlide - 1) * 100 + '%)'">
+            <img src="A_screenshot_of_a_web_application_page_titled_book.png" alt="Bookmarks Page" class="w-full flex-shrink-0 object-contain h-full">
+            <img src="A_digital_screenshot_of_an_email_titled_\"Weekly_Su.png" alt="Weekly Email Summary" class="w-full flex-shrink-0 object-contain h-full">
+          --> 
+<!--  <img src="bookmarks-page.png" alt="Bookmarks Page" class="w-full flex-shrink-0 object-contain h-full">
+            <img src= "email-summary.png" alt="Weekly Email Summary" class="w-full flex-shrink-0 object-contain h-full">
+        </div>
+        </div>
+        <div class="flex justify-center space-x-2 mt-6">
+          <button @click="activeSlide = 1"
+                  :class="activeSlide === 1 ? 'bg-blue-600' : 'bg-gray-300'"
+                  class="w-4 h-4 rounded-full transition-colors"></button>
+          <button @click="activeSlide = 2"
+                  :class="activeSlide === 2 ? 'bg-blue-600' : 'bg-gray-300'"
+                  class="w-4 h-4 rounded-full transition-colors"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script> --> -->
+
+
+
+<!-- Carousel Section -->
+<section class="bg-white py-20 px-6">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-10">See RecallMate in Action</h2>
+    <div x-data="{ activeSlide: 1 }" class="relative">
+      <div class="overflow-hidden rounded-lg shadow-lg h-[220px]">
+        <div class="flex transition-transform duration-500"
+             :style="'transform: translateX(-' + (activeSlide - 1) * 100 + '%)'">
+          <div class="w-full flex justify-center items-center">
+            <img src="bookmarks-page.png"
+                 alt="Bookmarks Page"
+                 class="h-[180px] w-auto object-contain">
+          </div>
+          <div class="w-full flex justify-center items-center">
+            <img src="email-summary.png"
+                 alt="Weekly Email Summary"
+                 class="h-[180px] w-auto object-contain">
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center space-x-2 mt-6">
+        <button @click="activeSlide = 1"
+                :class="activeSlide === 1 ? 'bg-blue-600' : 'bg-gray-300'"
+                class="w-4 h-4 rounded-full transition-colors"></button>
+        <!-- <button @click="activeSlide = 2"
+                :class="activeSlide === 2 ? 'bg-blue-600' : 'bg-gray-300'"
+                class="w-4 h-4 rounded-full transition-colors"></button> -->
+      </div>
+    </div>
+  </div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+
+
+
+
+<!-- Value Propositions -->
+  <section class="bg-gray-100 py-20 px-6">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-10">What Makes RecallMate Special</h2>
+      <div class="grid md:grid-cols-3 gap-10 text-left">
+        <div class="bg-white p-6 rounded-lg shadow">
+          <div class="text-4xl mb-4 text-center">🧠</div>
+          <h3 class="text-xl font-semibold mb-2">Never Forget What You Read</h3>
+          <p>Retain insights from articles and research with weekly AI-generated summaries.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow">
+          <div class="text-4xl mb-4 text-center">🔁</div>
+          <h3 class="text-xl font-semibold mb-2">Boost Learning with Spaced Repetition</h3>
+          <p>Reinforce key ideas over time using memory science.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow">
+          <div class="text-4xl mb-4 text-center">📬</div>
+          <h3 class="text-xl font-semibold mb-2">Weekly Email Digests</h3>
+          <p>Get a summarized digest of your saved content every Sunday.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow">
+          <div class="text-4xl mb-4 text-center">📚</div>
+          <h3 class="text-xl font-semibold mb-2">Turn Bookmarks into Knowledge</h3>
+          <p>Don’t just collect links—recall key takeaways quickly and easily.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow">
+          <div class="text-4xl mb-4 text-center">🗂️</div>
+          <h3 class="text-xl font-semibold mb-2">Organized by Day</h3>
+          <p>Bookmarks are automatically grouped by date with no extra work.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow">
+          <div class="text-4xl mb-4 text-center">⚡</div>
+          <h3 class="text-xl font-semibold mb-2">One-Click Save</h3>
+          <p>Save links instantly with minimal distraction while browsing.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow">
+          <div class="text-4xl mb-4 text-center">🤖</div>
+          <h3 class="text-xl font-semibold mb-2">AI-Powered Summaries</h3>
+          <p>Clear and concise takeaways tailored to your reading habits.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow">
+          <div class="text-4xl mb-4 text-center">📝</div>
+          <h3 class="text-xl font-semibold mb-2">Summarize On-Demand</h3>
+          <p>Click to generate an instant summary of any saved content.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow">
+          <div class="text-4xl mb-4 text-center">📈</div>
+          <h3 class="text-xl font-semibold mb-2">Improve Over Time</h3>
+          <p>Your summaries and recall get better the more you use RecallMate.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="bg-white py-20 px-6">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-10">What Users Are Saying</h2>
+      <div class="grid md:grid-cols-3 gap-8 text-left">
+        <div class="bg-gray-50 p-6 rounded-lg shadow">
+          <p class="italic mb-4">"As a product manager, I read dozens of articles every week. RecallMate helps me retain the best ideas without needing a second brain app."</p>
+          <p class="font-semibold">— Priya S., Product Manager</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-lg shadow">
+          <p class="italic mb-4">"I use it daily to save documentation, blog posts, and StackOverflow threads. The summaries are actually useful."</p>
+          <p class="font-semibold">— Dan W., Full-Stack Developer</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-lg shadow">
+          <p class="italic mb-4">"Perfect for studying. I save reference links and get digestible notes right before exams!"</p>
+          <p class="font-semibold">— Maya L., University Student</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<!-- CTA Footer -->
   <footer class="bg-blue-600 text-white py-10 text-center">
-    <h2 class="text-2xl font-bold mb-4">Start Remembering Today</h2>
+    <h2 class="text-2xl font-bold mb-4">Start Collecting Your Favourite Content</h2>
     <a href="#" class="bg-white text-blue-600 py-3 px-6 rounded-full text-lg hover:bg-gray-100">Add to Chrome</a>
   </footer>
 </body>
